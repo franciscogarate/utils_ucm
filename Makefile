@@ -1,12 +1,18 @@
 # Definición de variables
+REPO_URL = https://github.com/franciscogarate/utils_ucm.git
+REPO_DIR = utils_ucm
 SRC_DIR = notebooks
 DEST_DIR = /
 
 # Objetivo por defecto
-.PHONY: dia1
+.PHONY: update dia1
 
-ejercicios_dia1:
-	#cp $(SRC_DIR)/*.ipynb $(DEST_DIR)
-	cd ./notebooks/*.ipynb ../
+update:
+	@if [ -d "$(REPO_DIR)/.git" ]; then \
+		cd $(REPO_DIR) && git pull; \
+	else \
+		git clone $(REPO_URL); \
+	fi
+
 dia1:
 	cd ./notebooks && cp *.ipynb ../../
