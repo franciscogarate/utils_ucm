@@ -7,6 +7,13 @@ DEST_DIR = /
 # Objetivo por defecto
 .PHONY: update dia1 ejercicio%
 
+libs:
+	pip install -r utils_ucm/requirements.txt
+
+libs_env:
+	pip install uv
+	uv pip install -r utils_ucm/requirements.txt
+
 update:
 	@if [ -d "$(REPO_DIR)/.git" ]; then \
 		cd $(REPO_DIR) && git pull; \
