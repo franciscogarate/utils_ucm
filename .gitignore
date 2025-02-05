@@ -1,0 +1,9 @@
+# Ignorar *.py en la carpeta notebooks
+notebooks/*.py
+
+# Ignora pendientes de acabar
+notebooks/Ejercicio_X*.ipynb
+
+# Ignorar  *.xlsx en data
+data/*.xlsx
+!data/censo.xlsx
