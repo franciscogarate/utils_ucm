@@ -8,11 +8,11 @@ DEST_DIR = /
 .PHONY: update dia1 ejercicio%
 
 libs:
-	pip install -r utils_ucm/requirements.txt
+	pip install -r requirements.txt
 
 libs_env:
 	pip install uv
-	uv pip install -r utils_ucm/requirements.txt
+	uv pip install -r requirements.txt
 
 update:
 	@if [ -d "$(REPO_DIR)/.git" ]; then \
@@ -26,4 +26,4 @@ dia1:
 
 ejercicio%:
 	#cd utils && cp file$*.xlsx ..
-	cd ./notebooks && cp Ejercicio_%*.ipynb ../../
+	cd ./notebooks && cp Ejercicio_$*_*.ipynb ../../
