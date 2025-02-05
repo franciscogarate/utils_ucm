@@ -5,7 +5,7 @@ SRC_DIR = notebooks
 DEST_DIR = /
 
 # Objetivo por defecto
-.PHONY: update dia1
+.PHONY: update dia1 ejercicio%
 
 update:
 	@if [ -d "$(REPO_DIR)/.git" ]; then \
@@ -16,3 +16,7 @@ update:
 
 dia1:
 	cd ./notebooks && cp *.ipynb ../../
+
+ejercicio%:
+	#cd utils && cp file$*.xlsx ..
+	cd ./notebooks && cp Ejercicio_%*.ipynb ../../
