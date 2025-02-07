@@ -7,3 +7,4 @@ notebooks/Ejercicio_X*.ipynb
 # Ignorar  *.xlsx en data
 data/*.xlsx
 !data/censo.xlsx
+!data/Ejercicio_8_datos.xlsx
