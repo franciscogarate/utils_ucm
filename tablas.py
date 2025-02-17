@@ -2,14 +2,14 @@ import pandas as pd
 import numpy as np
 from datetime import date #, datetime
 
-censo = pd.read_excel('../data/censo.xlsx')
+censo = pd.read_excel('./utils_ucm/data/censo.xlsx')
 
-permf2000c = pd.read_csv('../data/permf2000c.csv',sep=';',decimal=',')
-permf2020_col_1ord = pd.read_csv('../data/per2020_col_1ord.csv',sep=';',decimal=',')
-permf2020_col_2ord = pd.read_csv('../data/per2020_col_2ord.csv',sep=';',decimal=',')
+permf2000c = pd.read_csv('./utils_ucm/data/permf2000c.csv',sep=';',decimal=',')
+permf2020_col_1ord = pd.read_csv('./utils_ucm/data/per2020_col_1ord.csv',sep=';',decimal=',')
+permf2020_col_2ord = pd.read_csv('./utils_ucm/data/per2020_col_2ord.csv',sep=';',decimal=',')
 permf2012c = permf2020_col_1ord
 
-pasem2020 = pd.read_csv('../data/pasem2020.csv',sep=';',decimal=',')
+pasem2020 = pd.read_csv('./utils_ucm/data/pasem2020.csv',sep=';',decimal=',')
 PASEM2020_Gen_F_2ord = pasem2020['PASEM2020_General_F_2ord'][:-10].tolist()
 PASEM2020_Gen_M_2ord = pasem2020['PASEM2020_General_M_2ord'][:-10].tolist()
 PASEM2020_Rel_F_1ord = pasem2020['PASEM2020_Rel_F_1ord'][:-11].tolist()
