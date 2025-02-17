@@ -10,7 +10,7 @@ permf2020_col_2ord = pd.read_csv('./utils_ucm/data/per2020_col_2ord.csv',sep=';'
 permf2012c = permf2020_col_1ord
 
 
-lx_unisex = pd.read_csv('./utils_ucm/data/PASEM2020_Decesos_2ord_Unisex')
+lx_unisex = pd.read_csv('./utils_ucm/data/PASEM2020_Decesos_2ord_Unisex.csv')
 
 
 pasem2020 = pd.read_csv('./utils_ucm/data/pasem2020.csv',sep=';',decimal=',')
