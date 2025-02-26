@@ -8,3 +8,4 @@ notebooks/Ejercicio_X*.ipynb
 data/*.xlsx
 !data/censo.xlsx
 !data/Ejercicio_8_datos.xlsx
+!data/EIOPA_RFR_20241231_Term_Structures.xlsx
