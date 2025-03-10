@@ -24,6 +24,9 @@ update:
 dia1:
 	cd ./notebooks && cp *.ipynb ../../
 
+copia_siniestros:
+	cd ./notebooks && cp siniestros.csv ../../
+
 ejercicio%:
 	#cd utils && cp file$*.xlsx ..
 	cd ./notebooks && cp Ejercicio_$*_*.ipynb ../../
