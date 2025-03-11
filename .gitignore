@@ -9,3 +9,4 @@ data/*.xlsx
 !data/censo.xlsx
 !data/Ejercicio_8_datos.xlsx
 !data/EIOPA_RFR_20241231_Term_Structures.xlsx
+!data/AccidentesBicicletas_2024.xlsx
