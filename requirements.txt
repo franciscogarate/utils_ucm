@@ -26,3 +26,6 @@ xlwt
 html5lib
 pyxlsb
 #xlsxwriter
+
+# Entorno
+python-dotenv
